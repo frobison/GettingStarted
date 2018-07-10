@@ -21,7 +21,7 @@ createTDOWithAsset(input:{
 
 }
 ```
-## Create Job with targetID from Create TDO
+## Create Job with targetId from Create TDO
 
 ```
 mutation{
