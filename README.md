@@ -9,7 +9,7 @@
 ### Face Detection -   `84b513bd-d64d-3a35-9d42-579c8611fdbf`
 
 
-## CreateTDO with Asset
+## Create TDO with Asset
 ``` mutation{
 createTDOWithAsset(input:{
   startDateTime:1521052518
@@ -21,4 +21,23 @@ createTDOWithAsset(input:{
 
 }
 ```
+## Create Job with targetID from Create TDO
 
+```
+mutation{
+  createJob(input:{
+    targetId: "1234566"
+    tasks:[{
+      engineId:"1379a425-67ac-4546-89b6-034b2b18ff1a"
+
+    }, 
+    {
+      engineId:"FAVORITEENGINEID"
+
+    }]
+  }){
+    id
+  }
+}
+
+```
